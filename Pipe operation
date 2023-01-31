@@ -1,0 +1,13 @@
+head(mtcars)
+library(dplyr)
+mtcars %>% 
+  group_by(cyl) %>% 
+  summarise(mean_mpg = mean(mpg))
+mtcars %>% 
+  group_by(cyl, am) %>% 
+  summarise(mean_mpg = mean(mpg),
+            sd_hp = sd(hp))
+new_mtcars <- mtcars %>%
+  mutate(mpg2 = mpg*2,
+         mpg_root = sqrt(mpg))
+head(new_mtcars)
