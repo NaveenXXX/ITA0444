@@ -1,0 +1,6 @@
+kelvin_to_celcius<-function(n){
+	celcius=n-273.15
+	print(celcius)
+}
+n<-as.integer(readline(prompt="Enter the number : "))
+kelvin_to_celcius
