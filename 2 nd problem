@@ -1,0 +1,59 @@
+x = vector("numeric", 10)
+print("Numeric Type:")
+print(x)
+c = vector("complex", 10)
+print("Complex Type:")
+print(c)
+l = vector("logical", 10)
+print("Logical Type:")
+print(l)
+chr = vector("character", 10)
+print("Character Type:")
+print(chr)
+
+
+a = 4
+b = 5
+print("FOR ADDITION:")
+a+b
+print("FOR SUBTRACTION:")
+a-b
+print("FOR MULTIPLICATION:")
+a*b
+print("FOR DIVISION:")
+a/b
+
+
+year = as.integer(readline(prompt="Enter a year: "))
+if((year %% 4) == 0) {
+if((year %% 100) == 0) {
+if((year %% 400) == 0) {
+print(paste(year,"is a leap year"))
+} else {
+print(paste(year,"is not a leap year"))
+}
+} else {
+print(paste(year,"is a leap year"))
+}
+} else {
+print(paste(year,"is not a leap year"))
+}
+
+
+
+a <- c(90, 50, 70, 80, 70, 50, 30, 30, 86, 90, 22)
+print(mean(a))
+print(median(a))
+getmode <- function(a) {
+   uniqv <- unique(a)
+   uniqv[which.max(tabulate(match(a, uniqv)))]
+}
+result <- getmode(a)
+print(result)
+
+
+
+a <- c(90, 50, 70, 80, 70, 50, 30, 30, 86, 90, 22)
+print(mean(a))
+print(sum(a))
+print(prod(a))
